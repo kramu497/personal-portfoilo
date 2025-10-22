@@ -1,0 +1,219 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+}
+nav {
+  background-color: #777aae;
+  padding: 13px;
+  text-align: end;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: rgb(251, 251, 251);
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  max-width: 930px;
+  margin: 60px auto;
+  background-color: #f4c6d233;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(91, 251, 63, 0.633);
+  text-align: center;
+}
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+.project-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.project-card {
+  background: rgb(241, 199, 199);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(8, 205, 57, 0.887);
+  flex: 1 1 300px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.photo img {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 2em;
+  border: 3px solid #fefdfe;
+  box-shadow: 0 4px 12px rgba(249, 151, 151, 0.805);
+}
+.intro-text {
+  max-width: 500px;
+}
+.intro-text h1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+.intro-text p {
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+.btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.btn.peach {
+  background-color: #f28947;
+  color: white;
+}
+.btn.blue {
+  background-color: #4a9af5;
+  color: white;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: Poppins, 'Segoe UI', sans-serif;
+}
+.socials-container{
+  display: flex;
+  gap: 15px;
+}
+.socials-container a{
+  background-color: white;
+  padding: 1em;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 5px 10px rgba(137, 236, 198, 0.908);
+}
+.socials-container a svg{
+  height: 32px;
+}
+.socials-container a::before{
+  content: attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(-30px) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.socials-container a:hover{
+  background-color: var(--accent-color);
+  fill: white;
+}
+.socials-container a::after{
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--accent-color);
+  transform: translateY(0) rotate(25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+.socials-container a:hover::before{
+  transform: translateY(-65px) rotate(0);
+  opacity: 1;
+}
+.socials-container a:hover::after{
+  transform: translateY(-42px) rotate(0);
+  opacity: 1;
+}
+.form-container {
+  max-width: 400px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgb(251, 69, 120);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+}
+h3 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #252424;
+}
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #111010;
+}
+
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin-top: 1px;
+  border: 1px solid #ff5805;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+button {
+  margin-top: 10px;
+  width: 40%;
+  padding: 12px;
+  background-color: #f2eeed;
+  color: rgb(19, 18, 18);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #5ff731;
+}
