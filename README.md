@@ -1,2 +1,2 @@
-# personal-portfoilo
+# My Learning Journey
 student webpage
